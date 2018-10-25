@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WXCategory"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "微信系统类型扩展"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  有UIColor,Data,String等基础系统类型的扩展
+  有UIColor,Data,String,UIImage,UITextView,UIView,UIViewController等基础系统类型的扩展
                    DESC
 
   s.homepage     = "https://github.com/zhang382847657/WXCategory"
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "WXCategory/Classes/*.swift"
+  s.source_files  = "WXCategory/*.swift"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

@@ -9,13 +9,13 @@
 import Foundation
 
 
-extension Date {
+public extension Date {
     
     /// 转成日期字符串格式
     ///
     /// - Parameter dateFormat: 日期格式
     /// - Returns: 日期字符串
-    func dateConvertString(dateFormat:String="yyyy-MM-dd HH:mm:ss") -> String {
+    public func dateConvertString(dateFormat:String="yyyy-MM-dd HH:mm:ss") -> String {
         
         let timeZone = TimeZone.init(identifier: "UTC")
         let formatter = DateFormatter()
@@ -31,7 +31,7 @@ extension Date {
     /// 转成朋友圈日期字符串类型 比如刚刚、几分钟前、几天前等
     ///
     /// - Returns: 日期字符串
-    func dateConvertFriendCircleType() -> String {
+    public func dateConvertFriendCircleType() -> String {
         
         //获取当前时间
         let calendar = Calendar.current
